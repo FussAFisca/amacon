@@ -96,8 +96,8 @@
   --color-primary-alt: rgb(215,154,122);
   --color-primary-light: rgb(230,171,143);
   --color-primary-lightest: #3cb30e;
-  --color-secondary: rgb(251, 255, 30);
-  --color-tertiary: rgb(254,233,210);
+  --color-secondary: rgb(230,171,143);
+  --color-tertiary: rgb(238, 131, 17);
   --color-tertiary-alt: #F4AC32;
   --color-pink: #f47932;
   --color-light-green: #FACC6B;
@@ -15236,7 +15236,7 @@ iframe {
 }
 @media only screen and (max-width: 767px) {
   .slider-style-8 .inner .description br {
-    display: none;
+    display: none
   }
 }
 
@@ -15255,9 +15255,11 @@ iframe {
 
 .slider-bg-image {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: landscape;
+  background-position: center right;
 }
+
+
 .slider-bg-image.bg-image-1 {
   background-image: url(../images/bg/bg-image-1.jpg);
 }
