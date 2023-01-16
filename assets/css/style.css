@@ -106,7 +106,7 @@
   --color-secondary-darker: #190301;
   --color-light-green-darker: #001f27;
   --color-pink-darker: #0733f7;
-  --color-heading: #ffffff;
+  --color-heading: #f47932;
   --color-body: #8b8b8b;
   --color-dark: #060606;
   --color-darker: rgba(6, 6, 6, 0.7);
@@ -10252,7 +10252,7 @@ div.btn-default.rounded-player.sm-size {
   height: 90px;
   margin: 0 auto;
   margin-bottom: 23px;
-  background-color: var(--color-primary-darker);
+  background-color: #695440;
   line-height: 90px;
   align-items: center;
 }
@@ -10409,10 +10409,10 @@ div.btn-default.rounded-player.sm-size {
 }
 
 .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1 .icon {
-  color: var(--color-secondary);
+  color: var(--color-pink);
 }
 .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1 .icon {
-  color: var(--color-tertiary);
+  color: var(--color-pink);
 }
 .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1 .icon {
   color: var(--color-pink);
@@ -10424,10 +10424,10 @@ div.btn-default.rounded-player.sm-size {
   color: var(--color-tertiary);
 }
 .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1.icon-circle-style .icon {
-  background-color: var(--color-secondary-darker);
+  background-color: #695440;
 }
 .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1.icon-circle-style .icon {
-  background-color: var(--color-tertiary-darker);
+  background-color: #695440;
 }
 .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
   background-color: var(--color-pink-darker);
@@ -13338,7 +13338,7 @@ iframe {
 
 .my_switcher ul li a.dark img {
   display: none;
-  filter: brightness(100);
+  filter: brightness(60);
 }
 
 .my_switcher {
@@ -13346,7 +13346,7 @@ iframe {
   padding: 0;
   margin-left: 10px;
   width: 40px;
-  background: var(--color-secondary);
+  background: var(--color-pink);
   display: flex;
   justify-content: center;
   height: 40px;
@@ -13379,7 +13379,7 @@ iframe {
   display: block;
   position: relative;
   z-index: 2;
-  background: var(--color-secondary);
+  background: var(--color-pink);
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -14401,21 +14401,28 @@ iframe {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .display-one {
     font-size: 70px;
+        color: var(--color-white) !important;
+
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .display-one {
     font-size: 65px;
+    color: var(--color-white) !important;
+
   }
 }
 @media only screen and (max-width: 767px) {
   .display-one {
     font-size: 50px;
+    color: var(--color-white) !important;
+
   }
 }
 @media only screen and (max-width: 575px) {
   .display-one {
     font-size: 30px;
+    color: var(--color-white) !important;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -14490,7 +14497,7 @@ iframe {
 }
 
 .bg-overlay-solid {
-  position: relative;
+  position: inherit;
   z-index: 1;
 }
 .bg-overlay-solid::before {
@@ -14515,6 +14522,7 @@ iframe {
   top: -250px;
   left: -250px;
   bottom: auto;
+  background-image: linear-gradient(45deg, var(--color-secondary), var(--color-tertiary));
   content: "";
   z-index: -1;
 }
@@ -14550,7 +14558,7 @@ iframe {
   letter-spacing: 0.5px;
   display: block;
   margin-bottom: 18px;
-  color: var(--color-body);
+  color: var(--color-white);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-style-1 .inner .subtitle {
@@ -14991,7 +14999,7 @@ iframe {
   position: relative;
   padding-right: 20px;
   display: inline-block;
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 .slider-style-5 .inner .subtitle::after {
   position: absolute;
@@ -15009,7 +15017,7 @@ iframe {
   display: block;
   font-size: 64px;
   line-height: 1.4;
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 @media only screen and (max-width: 767px) {
   .slider-style-5 .inner .title {
@@ -15684,7 +15692,7 @@ body.active-light-mode .single-demo .thumbnail .image-dark {
 body.active-light-mode .footer-style-default .social-default li a,
 body.active-light-mode .copyright-style-one .social-default.color-lessdark li a,
 body.active-light-mode .rainbow-newsletter-default .rainbow-newsletter .form-group input {
-  background: #fff;
+  background: #fcefe5;
 }
 body.active-light-mode .copyright-style-one .ft-menu li + li::after {
   background: #c5c1c1;
@@ -15738,15 +15746,15 @@ body.active-light-mode .envato-black {
 }
 
 body.active-light-mode .service.service__style--1.icon-circle-style .icon {
-  background-color: #059dff0f;
+  background-color: #fcefe5;
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1.icon-circle-style .icon {
-  background-color: #fb53431a;
+  background-color: #fcefe5;
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1.icon-circle-style .icon {
-  background-color: #6549d51f;
+  background-color: #fcefe5;
 }
 
 body.active-light-mode .timeline-dot::after {
