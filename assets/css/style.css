@@ -106,7 +106,7 @@
   --color-secondary-darker: #190301;
   --color-light-green-darker: #001f27;
   --color-pink-darker: #0733f7;
-  --color-heading: #f47932;
+  --color-heading: #d8d8d8;
   --color-body: #8b8b8b;
   --color-dark: #060606;
   --color-darker: rgba(6, 6, 6, 0.7);
@@ -1107,7 +1107,7 @@ All Extend Here
 
 .bg_image, .bgImagePosition {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
 }
 
@@ -9102,28 +9102,39 @@ xclip
   margin-left: 30px;
 }
 
+.rainbow-header.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--color-dark) !important;
+  left: 0;
+  height: 80px;
+  z-index: 10;
+}
+
 .rainbow-header.sticky {
   position: fixed;
+  padding-top: 100;
   top: 0;
   left: 0;
   background-color: var(--color-dark) !important;
   width: 100%;
   height: 80px;
-  animation: headerSticky 0.95s ease forwards;
-  z-index: 9;
+  animation: headerSticky 0.005s ease forwards;
+z-index: 10;
 }
 
 .rbt-fluid-header .container-wrapper {
-  max-width: 1600px;
+max-width: 1600px;
 }
 
 @keyframes headerSticky {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+0% {
+  transform: translateY(0%);
+}
+0% {
+  transform: translateY(10);
+}
 }
 /*--------------------------
     Navigation Styles 
@@ -9141,7 +9152,7 @@ xclip
   display: block;
   height: 80px;
   line-height: 80px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .mainmenu-nav .mainmenu > li > a {
@@ -10836,12 +10847,11 @@ div.btn-default.rounded-player.sm-size {
 -------------------------*/
 .social-default {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: none;
   padding: 0;
   margin: 0;
   list-style: none;
   justify-content: center;
-  margin: -5px;
 }
 .social-default li {
   margin: 5px;
@@ -14327,13 +14337,13 @@ iframe {
 }
 
 .height-850 {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   align-items: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .height-850 {
-    height: 100vh;
+    height: 85vh;
     padding: 150px 0;
   }
 }
@@ -14496,7 +14506,7 @@ iframe {
 }
 
 .bg-overlay-solid {
-  position: inherit;
+  position: relative;
   z-index: 1;
 }
 .bg-overlay-solid::before {
@@ -14998,7 +15008,7 @@ iframe {
   position: relative;
   padding-right: 20px;
   display: inline-block;
-  color: var(--color-white) !important;
+  color: var(--color-pink) !important;
 }
 .slider-style-5 .inner .subtitle::after {
   position: absolute;
@@ -15016,7 +15026,7 @@ iframe {
   display: block;
   font-size: 64px;
   line-height: 1.4;
-  color: var(--color-white) !important;
+  color: var(--color-heading) !important;
 }
 @media only screen and (max-width: 767px) {
   .slider-style-5 .inner .title {
@@ -15797,20 +15807,20 @@ body.active-light-mode .rainbow-back-top,
 body.active-light-mode .popup-mobile-menu .inner,
 body.active-light-mode .rainbow-call-to-action.style-8,
 body.active-light-mode .bg-overlay-solid::before {
-  background: #f5f8fa;
+  background: #ffffff;
 }
 
 body.active-light-mode .rainbow-header.sticky {
-  background: #f5f8fa !important;
+  background: #ffffff !important;
 }
 
 body.active-light-mode .bg-color-blackest {
-  background: #f5f8fa !important;
+  background: #ffffff !important;
 }
 
 body.active-light-mode .footer-style-default,
 body.active-light-mode .copyright-style-one {
-  background: #f5f8fa;
+  background: #ffffff;
 }
 
 body.active-light-mode .slider-style-2 .list-icon li .icon {
@@ -15825,16 +15835,16 @@ body.active-light-mode .advance-pricing,
 body.active-light-mode .rainbow-pricing.style-5 .pricing-table-inner .pricing,
 body.active-light-mode .popup-mobile-menu .inner .header-top .close-menu .close-button,
 body.active-light-mode .hamberger-button {
-  background: #d8d8d8;
+  background: #ffffff;
 }
 
 body.active-light-mode .single-demo {
-  background: #e9f8fe;
+  background: #ffffff;
 }
 
 body.active-light-mode .rainbow-accordion-style .card .card-body,
 body.active-light-mode .brand-style-1 li {
-  border-color: #d8d8d8;
+  border-color: #ffffff;
 }
 
 body.active-light-mode hr {
