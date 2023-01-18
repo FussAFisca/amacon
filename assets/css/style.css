@@ -14495,7 +14495,7 @@ iframe {
 }
 .bg-overlay::before {
   position: absolute;
-  height: 100%;
+  height: 0%;
   width: 100%;
   opacity: 1;
   top: 0;
@@ -15043,6 +15043,9 @@ iframe {
     display: none;
   }
 }
+
+
+
 
 .slider-style-6 {
   background-color: var(--color-blackest);
@@ -15615,7 +15618,7 @@ body.active-light-mode .radial-progress .circle-text span.count,
 body.active-light-mode .radial-progress .circle-text span.count::after,
 body.active-light-mode .radial-progress-single .circle-info .subtitle,
 body.active-light-mode .copyright-style-one .copyright-text a {
-  color: #65676b;
+  color: #181818;
 }
 body.active-light-mode .header-transparent.sticky .mainmenu-nav .mainmenu > li > a,
 body.active-light-mode .clltoaction-style-default.style-7 .content .subtitle,
