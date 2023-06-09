@@ -114,7 +114,7 @@
   --color-black: #1F193D;
   --color-black-off: rgba(0,0,0,0.2);
   --color-blacker: rgba(15, 15, 17, 0);
-  --color-blackest: #0f0f11;
+  --color-blackest: #1F193D;
   --color-border: hsla(0,0%,100%,0.1);
   --color-lessdark: #1e1e1e;
   --color-gray: #65676B;
@@ -13418,7 +13418,7 @@ iframe {
   border-radius: 50%;
   text-align: center;
   z-index: 999 !important;
-  background-color: #0f0f11;
+  background-color: #1F193D;
   background-color: var(--color-blackest);
   display: flex;
   align-items: center;
