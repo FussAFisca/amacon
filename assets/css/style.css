@@ -109,7 +109,7 @@
   --color-heading: #d8d8d8;
   --color-body: #9d9c9c;
   --color-dark: #1F193D;
-  --color-darker: rgba(6, 6, 6, 0.7);
+  --color-darker: #1F193D;
   --color-darkest: rgba(0, 0, 0, 0.3);
   --color-black: #1F193D;
   --color-black-off: rgba(0,0,0,0.2);
@@ -343,7 +343,7 @@ img {
   -ms-interpolation-mode: bicubic;
   border: 0;
   vertical-align: middle;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
